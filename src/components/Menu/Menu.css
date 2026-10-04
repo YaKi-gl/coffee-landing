@@ -7,6 +7,7 @@
 }
 
 .menu__item {
+  cursor: default;
   display: flex;
   align-items: baseline;
   gap: 8px;
@@ -16,6 +17,7 @@
 
 .menu__dots {
   flex: 1;
+  transform-origin: left;
   border-bottom: 2px dotted var(--dots);
 }
 

@@ -9,9 +9,17 @@
 .feature {
   padding: 24px;
   text-align: center;
+  border-radius: var(--radius-lg);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  background: var(--surface);
+  box-shadow: 0 12px 30px rgba(43, 29, 20, 0.08);
 }
 
 .feature__icon {
+  display: inline-block;
   margin-bottom: 12px;
   font-size: 2.5rem;
 }

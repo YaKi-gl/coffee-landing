@@ -1,19 +1,42 @@
 /* Первый экран: оффер и главная кнопка */
 
 .hero {
+  position: relative;
+  overflow: hidden;
   padding: 140px 0;
   color: #fff;
   text-align: center;
+  background: var(--text);
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
   background:
     linear-gradient(rgba(43, 29, 20, 0.55), rgba(43, 29, 20, 0.55)),
     url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80") center / cover,
-    var(--text);
+    radial-gradient(ellipse at 30% 20%, #7a4a2a 0%, #3d2416 55%, #1f120b 100%);
+}
+
+.hero__content {
+  position: relative;
 }
 
 .hero__title {
   margin-bottom: 20px;
   font-size: clamp(2.2rem, 6vw, 3.8rem);
   line-height: 1.15;
+}
+
+/* Маска для эффекта «строка выезжает снизу» */
+.hero__line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.08em;
+}
+
+.hero__line-inner {
+  display: inline-block;
 }
 
 .hero__text {
