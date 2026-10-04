@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Зерно — кофейня</title>
+  <meta name="description" content="Кофейня «Зерно»: свежая обжарка, домашняя выпечка и уютная атмосфера.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="logo">☕ Зерно</a>
+      <nav class="nav__links">
+        <a href="#about">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1>Кофе, ради которого<br>стоит проснуться</h1>
+      <p>Обжариваем зерно сами, печём каждое утро и всегда рады вам.</p>
+      <a href="#menu" class="btn">Смотреть меню</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container features">
+      <div class="feature">
+        <div class="feature__icon">🌱</div>
+        <h3>Свежая обжарка</h3>
+        <p>Зерно из Эфиопии, Колумбии и Бразилии — обжариваем небольшими партиями каждую неделю.</p>
+      </div>
+      <div class="feature">
+        <div class="feature__icon">🥐</div>
+        <h3>Своя выпечка</h3>
+        <p>Круассаны, синнабоны и чизкейки готовим на месте с самого утра.</p>
+      </div>
+      <div class="feature">
+        <div class="feature__icon">🛋️</div>
+        <h3>Уютное место</h3>
+        <p>Быстрый Wi‑Fi, розетки у каждого столика и мягкие кресла.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="section section--alt">
+    <div class="container">
+      <h2>Меню</h2>
+      <ul class="menu">
+        <li><span>Эспрессо</span><span class="dots"></span><span>150 ₽</span></li>
+        <li><span>Американо</span><span class="dots"></span><span>180 ₽</span></li>
+        <li><span>Капучино</span><span class="dots"></span><span>230 ₽</span></li>
+        <li><span>Флэт уайт</span><span class="dots"></span><span>260 ₽</span></li>
+        <li><span>Раф ванильный</span><span class="dots"></span><span>290 ₽</span></li>
+        <li><span>Круассан</span><span class="dots"></span><span>170 ₽</span></li>
+        <li><span>Чизкейк</span><span class="dots"></span><span>250 ₽</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <div class="container contacts">
+      <div>
+        <h2>Приходите в гости</h2>
+        <p>ул. Кофейная, 12</p>
+        <p>Пн–Пт: 7:30 – 21:00<br>Сб–Вс: 9:00 – 22:00</p>
+        <p><a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+      </div>
+      <form class="form" id="booking">
+        <h3>Забронировать столик</h3>
+        <input name="name" placeholder="Ваше имя" required>
+        <input name="phone" type="tel" placeholder="Телефон" required>
+        <button class="btn" type="submit">Отправить</button>
+        <p class="form__ok" id="formOk" hidden>Спасибо! Мы скоро перезвоним.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© 2026 Кофейня «Зерно»</div>
+  </footer>
+
+  <script>
+    document.getElementById('booking').addEventListener('submit', function (e) {
+      e.preventDefault();
+      this.reset();
+      document.getElementById('formOk').hidden = false;
+    });
+  </script>
+</body>
+</html>
