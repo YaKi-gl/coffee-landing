@@ -1,0 +1,9 @@
+/* Подвал */
+
+.footer {
+  padding: 24px 0;
+  background: var(--text);
+  color: var(--on-dark);
+  text-align: center;
+  font-size: 0.9rem;
+}

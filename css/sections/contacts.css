@@ -1,0 +1,24 @@
+/* Контакты и форма бронирования */
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contacts__title {
+  margin-bottom: 16px;
+  font-size: 2.2rem;
+}
+
+.contacts__line {
+  margin-bottom: 12px;
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .contacts {
+    grid-template-columns: 1fr;
+  }
+}

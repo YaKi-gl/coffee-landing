@@ -1,0 +1,25 @@
+/* Меню в «ресторанном» стиле: название ....... цена */
+
+.menu {
+  max-width: 520px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.menu__item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+.menu__dots {
+  flex: 1;
+  border-bottom: 2px dotted var(--dots);
+}
+
+.menu__price {
+  font-weight: 600;
+  color: var(--accent-dark);
+}

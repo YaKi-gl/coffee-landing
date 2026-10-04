@@ -1,0 +1,29 @@
+/* Первый экран: оффер и главная кнопка */
+
+.hero {
+  padding: 140px 0;
+  color: #fff;
+  text-align: center;
+  background:
+    linear-gradient(rgba(43, 29, 20, 0.55), rgba(43, 29, 20, 0.55)),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80") center / cover,
+    var(--text);
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  line-height: 1.15;
+}
+
+.hero__text {
+  margin-bottom: 32px;
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 96px 0;
+  }
+}

@@ -1,0 +1,44 @@
+/* Липкая навигация с размытием фона */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(251, 247, 242, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--bg-alt);
+}
+
+.nav__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--nav-height);
+}
+
+.nav__logo {
+  font: 700 1.5rem var(--font-display);
+  text-decoration: none;
+}
+
+.nav__links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav__links a {
+  color: var(--muted);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav__links a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .nav__links {
+    gap: 14px;
+    font-size: 0.9rem;
+  }
+}
